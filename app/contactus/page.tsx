@@ -1,0 +1,75 @@
+import React from "react";
+import InquiryForm from "@/app/components/InquiryForm";
+import PageHero from "@/app/components/PageHero";
+
+export default function ContactUsPage() {
+  return (
+    <div className="min-h-full flex flex-col font-sans bg-white text-gray-800 antialiased">
+      <PageHero
+        badge="Get In Touch"
+        title="Contact Our Branch"
+        description="We are here to assist you with your savings, deposits, and financial advisory needs."
+        imageAlt="Contact Jai Gajanan branch"
+      />
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="space-y-8">
+              <div>
+                <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Reach Out Directly</span>
+                <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">We&apos;d Love to Hear From You</h2>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Whether you have questions regarding our high-interest fixed deposits, daily collection services, or loan assistance, our team in Bhalki is ready to guide you.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 bg-white p-6 rounded-3xl shadow-sm border border-gray-100">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center shrink-0 font-bold text-lg">📍</div>
+                  <div>
+                    <h3 className="font-serif text-base font-bold text-gray-900 mb-1">Main Branch Address</h3>
+                    <p className="text-gray-600 text-xs leading-relaxed">Bhalki, Bidar District, Karnataka - 585328</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 bg-white p-6 rounded-3xl shadow-sm border border-gray-100">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center shrink-0 font-bold text-lg">📞</div>
+                  <div>
+                    <h3 className="font-serif text-base font-bold text-gray-900 mb-1">Direct Helpline</h3>
+                    <p className="text-gray-600 text-xs leading-relaxed">+91 9448275999 (Available during working hours)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 bg-white p-6 rounded-3xl shadow-sm border border-gray-100">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center shrink-0 font-bold text-lg">✉️</div>
+                  <div>
+                    <h3 className="font-serif text-base font-bold text-gray-900 mb-1">Official Email</h3>
+                    <p className="text-gray-600 text-xs leading-relaxed">info@jaigajanan.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <InquiryForm />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-sm h-[280px] sm:h-[360px] lg:h-[400px]">
+            <iframe
+              src="https://maps.google.com/maps?q=Bhalki,%20Bidar,%20Karnataka-585328&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              title="Branch Location Map"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
