@@ -1,6 +1,7 @@
 import React from "react";
 import InquiryForm from "@/app/components/InquiryForm";
 import PageHero from "@/app/components/PageHero";
+import { siteContact } from "@/app/site-config";
 
 export default function ContactUsPage() {
   return (
@@ -37,7 +38,7 @@ export default function ContactUsPage() {
                   <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center shrink-0 font-bold text-lg">📞</div>
                   <div>
                     <h3 className="font-serif text-base font-bold text-gray-900 mb-1">Direct Helpline</h3>
-                    <p className="text-gray-600 text-xs leading-relaxed">+91 9448275999 (Available during working hours)</p>
+                    <p className="text-gray-600 text-xs leading-relaxed">{siteContact.primaryPhoneDisplay} (Available during working hours)</p>
                   </div>
                 </div>
 
@@ -45,13 +46,51 @@ export default function ContactUsPage() {
                   <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center shrink-0 font-bold text-lg">✉️</div>
                   <div>
                     <h3 className="font-serif text-base font-bold text-gray-900 mb-1">Official Email</h3>
-                    <p className="text-gray-600 text-xs leading-relaxed">info@jaigajanan.com</p>
+                    <p className="text-gray-600 text-xs leading-relaxed">{siteContact.email}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <InquiryForm />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mb-10">
+            <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Visit Us</span>
+            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Our Branches</h2>
+            <p className="text-gray-600 text-sm leading-relaxed">Find the Jai Gajanan team at a branch near you.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Bhalki",
+                address: "Near SBI Bank Sirse Complex, Bidar Road, Bhalki, Dist. Bidar",
+                image: "/bhalki_branch.jpeg",
+              },
+              {
+                name: "Bidar",
+                address: "Near Traffic Signal, Shiv Nagar, Bidar",
+                image: "/bidar_branch.jpeg",
+              },
+              {
+                name: "Basavakalyan",
+                address: "Tourist Lodge, Holkunde Complex, Basavakalyan",
+                image: "/banner.png",
+              },
+            ].map((branch) => (
+              <article key={branch.name} className="overflow-hidden rounded-3xl border border-gray-100 bg-gray-50 shadow-sm">
+                <img src={branch.image} alt={`${branch.name} branch`} className="h-48 w-full object-cover" />
+                <div className="p-6">
+                  <h3 className="font-serif text-xl font-bold text-brand-purple mb-2">{branch.name} Branch</h3>
+                  <p className="text-sm leading-relaxed text-gray-600">{branch.address}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

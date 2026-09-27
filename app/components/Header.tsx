@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { siteContact } from '@/app/site-config';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -41,9 +42,9 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 min-w-0">
             <img
-              src="/logo.jpeg"
+              src="/logo_transperent.svg"
               alt="Jai Gajanan Souharda Credit Co-operative Ltd."
-              className="h-11 w-auto object-contain sm:h-12"
+              className="h-13 w-auto object-contain sm:h-14"
             />
             <div className="hidden sm:block leading-tight">
               <span className="block text-sm font-bold uppercase text-brand-purple">Jai Gajanan</span>
@@ -61,13 +62,13 @@ export default function Header() {
 
           <div className="hidden sm:flex items-center gap-4">
             <a
-              href="tel:+919448275999"
+              href={`tel:+91${siteContact.primaryPhone}`}
               className="flex items-center gap-2 bg-brand-purple text-white px-5 py-2.5 rounded-full text-[11px] font-semibold hover:bg-brand-darkPurple transition-all shadow-md"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
-              +91 9448275999
+              {siteContact.primaryPhoneDisplay}
             </a>
           </div>
 
@@ -92,10 +93,10 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="tel:+919448275999"
+                href={`tel:+91${siteContact.primaryPhone}`}
                 className="btn-brand-purple mt-2 w-full rounded-full py-3 text-center text-xs"
               >
-                Call +91 9448275999
+                Call {siteContact.primaryPhoneDisplay}
               </a>
             </div>
           </nav>

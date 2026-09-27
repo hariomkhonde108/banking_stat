@@ -17,10 +17,10 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { title: "Savings Accounts", desc: "Tailored personal savings plans with competitive interest rates to help your money grow securely day by day." },
-              { title: "Loan Assistance", desc: "Flexible credit and loan options customized for agriculture, business expansion, and personal needs with minimal documentation." },
+              { title: "Gold Loans", desc: "Instant gold loans with the lowest available interest rates, quick approval, and flexible repayment options." },
               { title: "Daily Deposit Collection", desc: "Reliable doorstep collection services designed for businesses and daily earners to cultivate consistent saving habits." },
               { title: "Secure Term Deposits", desc: "Fixed and recurring deposit schemes formulated for long-term financial stability and guaranteed peace of mind." },
-              { title: "Agri-Finance Support", desc: "Specialized financial packages structured to support local farmers, crop production, and agricultural development." },
+              { title: "Personal Financial Services", desc: "Practical financial guidance and support for members managing everyday money needs." },
               { title: "Member Advisory Support", desc: "Dedicated guidance and customer assistance to ensure a smooth, transparent, and personalized banking experience." },
             ].map((srv, idx) => (
               <div key={idx} className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:border-brand-gold transition-all">

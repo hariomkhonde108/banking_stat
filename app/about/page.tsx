@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import PageHero from "@/app/components/PageHero";
+import { siteMission, siteVision } from "@/app/site-config";
 
 export default function AboutPage() {
   return (
@@ -45,6 +46,22 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="py-20 bg-brand-lightGold/35">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="overflow-hidden rounded-3xl border border-brand-gold/30 bg-brand-lightGold/20 p-4 shadow-lg">
+            <img src="/president.jpeg" alt="President of Jai Gajanan Souharda Credit Co-operative Ltd." className="block h-auto max-h-[34rem] w-full object-contain" />
+          </div>
+          <div>
+            <span className="text-brand-purple text-xs font-bold tracking-widest uppercase">Leadership & Recognition</span>
+            <h2 className="mt-3 font-serif text-3xl font-bold text-gray-900">A cooperative built on trust</h2>
+            <p className="mt-4 text-gray-600 text-sm leading-relaxed">Our leadership keeps member service, transparency, and responsible financial growth at the center of every decision.</p>
+            <div className="mt-6 rounded-2xl border border-brand-gold/20 bg-white p-3 shadow-sm">
+              <img src="/award_gallery1.jpeg" alt="Jai Gajanan award and recognition" className="block h-auto max-h-[22rem] w-full rounded-xl object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
           <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-3 block">Our Roadmap</span>
@@ -53,9 +70,9 @@ export default function AboutPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { step: "01", title: "Our Vision", desc: "To create a robust financial ecosystem where trust is the primary currency and every individual has direct access to prosperity tools." },
+            { step: "01", title: "Our Vision", desc: siteVision },
             { step: "02", title: "Our Foundation", desc: "Founded to eliminate banking barriers in regional sectors, prioritizing financial literacy and community-first empowerment." },
-            { step: "03", title: "Our Commitment", desc: "Our commitment transcends balance sheets—it is measured by the families we support, the farmers we fund, and local businesses that flourish." },
+            { step: "03", title: "Our Mission", desc: siteMission },
           ].map((item, idx) => (
             <div key={idx} className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 relative text-left">
               <div className="text-4xl font-serif font-bold text-brand-gold/40 mb-4">{item.step}</div>
@@ -79,7 +96,7 @@ export default function AboutPage() {
             { title: "Financial Inclusion", desc: "Expanding modern banking access to every corner of society, ensuring geography is never a barrier." },
             { title: "Absolute Transparency", desc: "Honesty is our cornerstone, maintaining absolute clarity in every member policy and transaction." },
             { title: "Unwavering Trust", desc: "Safeguarding your financial future with robust institutional stability and personalized security." },
-            { title: "Community Growth", desc: "Investing in collective prosperity by backing local agricultural and commercial entrepreneurs." },
+            { title: "Community Growth", desc: "Investing in collective prosperity through accessible financial services and responsible member support." },
           ].map((val, idx) => (
             <div key={idx} className="bg-gray-50 border border-gray-100 rounded-3xl p-6 hover:border-brand-gold transition-all">
               <h3 className="font-serif text-lg font-bold text-brand-purple mb-2">{val.title}</h3>
