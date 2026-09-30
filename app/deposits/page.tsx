@@ -62,7 +62,7 @@ export default function DepositsPage() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <span className="text-brand-purple text-xs font-bold tracking-[0.2em] uppercase">Deposit Highlights</span>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-brand-darkPurple">Grow with clarity and confidence</h2>
+            <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-brand-darkPurple">Grow with clarity and confidence</h2>
             <p className="mt-4 text-sm leading-relaxed text-gray-700">Compare our savings, fixed deposit, recurring deposit, and instant gold loan options with our branch team.</p>
           </div>
           <div className="rounded-3xl border border-brand-gold/25 bg-white p-3 shadow-md">
@@ -75,7 +75,7 @@ export default function DepositsPage() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:px-8">
           <div>
             <span className="text-brand-purple text-xs font-bold tracking-[0.2em] uppercase">Scheme Pamphlet</span>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-gray-900">Explore our member plans</h2>
+            <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-gray-900">Explore our member plans</h2>
             <p className="mt-4 text-sm leading-relaxed text-gray-600">Review the complete scheme information and speak with our branch team for eligibility, documentation, and maturity details.</p>
           </div>
           <div className="rounded-3xl border border-brand-gold/30 bg-brand-lightGold/20 p-3 shadow-lg">
@@ -116,7 +116,7 @@ export default function DepositsPage() {
 
       <div className="bg-brand-purple text-white py-12 text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h3 className="font-serif text-2xl font-bold mb-3">Have Questions Regarding Interest Rates?</h3>
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3">Have Questions Regarding Interest Rates?</h3>
           <p className="text-gray-300 text-sm mb-6">Get in touch with our branch team or visit us in Bhalki for complete scheme documentation.</p>
           <Link href="/contactus" className="btn-brand-gold px-8 py-3 rounded-full text-sm shadow-md inline-block">
             Get in Touch

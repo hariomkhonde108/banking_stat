@@ -20,13 +20,13 @@ export default function ServicesPage() {
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
               <article className="rounded-3xl border border-brand-gold/60 bg-brand-lightGold/35 p-8 shadow-sm transition-all hover:border-brand-gold hover:shadow-md">
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-purple text-2xl font-bold text-brand-gold">12%</div>
-                <h3 className="font-serif text-2xl font-bold text-brand-purple">12% Interest on 1-Year F.D.</h3>
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-purple">12% Interest on 1-Year F.D.</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">Our special 12% interest rate on 1-year fixed deposits helps your one-time savings grow with a clear, secure maturity plan.</p>
                 <Link href="/contactus" className="mt-6 inline-flex text-xs font-semibold text-brand-purple transition-colors hover:text-brand-gold">Enquire About This Deposit →</Link>
               </article>
               <article className="rounded-3xl border border-brand-gold/60 bg-brand-purple p-8 text-white shadow-lg transition-all hover:bg-brand-darkPurple">
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gold text-2xl font-bold text-brand-darkPurple">2×</div>
-                <h3 className="font-serif text-2xl font-bold text-white">Double Your Deposit in 6 Years</h3>
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">Double Your Deposit in 6 Years</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/75">A distinct long-term deposit milestone designed to double the value of your original deposit over six years.</p>
                 <Link href="/contactus" className="mt-6 inline-flex text-xs font-semibold text-brand-gold transition-colors hover:text-white">Enquire About This Deposit →</Link>
               </article>
@@ -59,7 +59,7 @@ export default function ServicesPage() {
 
       <div className="bg-brand-purple text-white py-12 text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h3 className="font-serif text-2xl font-bold mb-3">Looking for Custom Financial Solutions?</h3>
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3">Looking for Custom Financial Solutions?</h3>
           <p className="text-gray-300 text-sm mb-6">Speak with our representatives at our Bhalki branch to discuss your specific requirements.</p>
           <Link href="/contactus" className="btn-brand-gold px-8 py-3 rounded-full text-sm shadow-md inline-block">
             Visit or Call Us

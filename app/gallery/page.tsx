@@ -12,8 +12,8 @@ export default function GalleryPage() {
         imageAlt="Jai Gajanan Cooperative Bank"
       />
 
-      <section className="bg-gray-50 px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-gray-50 py-10 sm:py-14 lg:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <GalleryGrid />
         </div>
       </section>

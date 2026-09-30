@@ -18,7 +18,7 @@ export default function CareerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Grow With Us</span>
-              <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Build Trust Through Better Banking</h2>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Build Trust Through Better Banking</h2>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 At Jai Gajanan Souharda Credit Co-operative Ltd., we foster an environment of continuous learning, ethical responsibility, and teamwork. If you are passionate about finance and community service, we would love to connect with you.
               </p>

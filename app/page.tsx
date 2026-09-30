@@ -33,8 +33,8 @@ export default function HomePage() {
         </div>
       </PageHero>
 
-      <section className="bg-gray-50 px-4 py-16 sm:px-6 md:py-20 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-gray-50 py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-brand-purple">Plan your next milestone</span>
             <h2 className="font-serif text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">Calculate Your Investment Growth &amp; Returns</h2>
@@ -44,8 +44,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white px-4 py-16 sm:px-6 md:py-20 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 max-w-2xl">
             <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-brand-purple">Special deposit milestones</span>
             <h2 className="font-serif text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">Make Your Savings Work Harder</h2>
@@ -143,7 +143,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10">
             <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Visit Us</span>
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Our Branches</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Branches</h2>
             <p className="text-gray-600 text-sm leading-relaxed">Find the Jai Gajanan team at a branch near you.</p>
           </div>
 

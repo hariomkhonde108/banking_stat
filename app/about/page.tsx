@@ -53,7 +53,7 @@ export default function AboutPage() {
           </div>
           <div>
             <span className="text-brand-purple text-xs font-bold tracking-widest uppercase">Leadership & Recognition</span>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-gray-900">A cooperative built on trust</h2>
+            <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-gray-900">A cooperative built on trust</h2>
             <p className="mt-4 text-gray-600 text-sm leading-relaxed">Our leadership keeps member service, transparency, and responsible financial growth at the center of every decision.</p>
             <div className="mt-6 rounded-2xl border border-brand-gold/20 bg-white p-3 shadow-sm">
               <img src="/award_gallery1.jpeg" alt="Jai Gajanan award and recognition" className="block h-auto max-h-[22rem] w-full rounded-xl object-contain" />
@@ -65,7 +65,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
           <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-3 block">Our Roadmap</span>
-          <h2 className="font-serif text-3xl font-bold text-gray-900">Foundational Milestones</h2>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Foundational Milestones</h2>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -87,7 +87,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
           <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-3 block">OUR CORE VALUES</span>
-          <h2 className="font-serif text-3xl font-bold text-gray-900">Guiding Principles of Jai Gajanan</h2>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Guiding Principles of Jai Gajanan</h2>
           <p className="text-gray-500 text-sm mt-2">The ethical baseline driving our commitment to community empowerment.</p>
         </div>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
 
       <div className="bg-brand-purple text-white py-12 text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h3 className="font-serif text-2xl font-bold mb-3">Ready to Join Our Cooperative Family?</h3>
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3">Ready to Join Our Cooperative Family?</h3>
           <p className="text-gray-300 text-sm mb-6">Discover our deposit schemes and loan options tailored for your financial goals.</p>
           <Link href="/contactus" className="btn-brand-gold px-8 py-3 rounded-full text-sm shadow-md inline-block">
             Contact Branch Today

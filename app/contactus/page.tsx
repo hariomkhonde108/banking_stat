@@ -19,7 +19,7 @@ export default function ContactUsPage() {
             <div className="space-y-8">
               <div>
                 <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Reach Out Directly</span>
-                <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">We&apos;d Love to Hear From You</h2>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">We&apos;d Love to Hear From You</h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Whether you have questions regarding our high-interest fixed deposits, daily collection services, or loan assistance, our team in Bhalki is ready to guide you.
                 </p>
@@ -61,7 +61,7 @@ export default function ContactUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-10">
             <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Visit Us</span>
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Our Branches</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Branches</h2>
             <p className="text-gray-600 text-sm leading-relaxed">Find the Jai Gajanan team at a branch near you.</p>
           </div>
 
