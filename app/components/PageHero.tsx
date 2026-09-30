@@ -15,6 +15,7 @@ type PageHeroProps = {
   imageAlt: string;
   align?: "center" | "left";
   children?: React.ReactNode;
+  className?: string;
 };
 
 export default function PageHero({
@@ -25,10 +26,11 @@ export default function PageHero({
   imageAlt,
   align = "center",
   children,
+  className = "",
 }: PageHeroProps) {
   return (
     <section
-      className={`relative isolate overflow-hidden bg-brand-darkPurple text-white py-20 md:py-24 lg:py-32 ${
+      className={`relative isolate overflow-hidden bg-brand-darkPurple text-white py-20 md:py-24 lg:py-32 ${className} ${
         align === "center" ? "text-center" : "text-left"
       }`}
     >

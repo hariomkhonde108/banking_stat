@@ -15,6 +15,7 @@ export default function HomePage() {
         description="Delivering safe savings, competitive returns, and accessible financial assistance designed to uplift every member of our community."
         imageSrc="/banner.png"
         imageAlt="Jai Gajanan cooperative banking"
+        className="py-14 md:py-16 lg:py-20"
       >
         <div className="flex flex-wrap justify-center gap-4">
           <Link

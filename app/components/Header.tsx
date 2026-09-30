@@ -39,12 +39,12 @@ export default function Header() {
       </div>
 
       <div className="bg-white border-b border-gray-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 min-w-0">
             <img
               src="/logo_transperent.PNG"
               alt="Jai Gajanan Souharda Credit Co-operative Ltd."
-              className="h-13 w-auto object-contain sm:h-14"
+              className="h-20 w-auto object-contain sm:h-[5.5rem]"
             />
             <div className="hidden sm:block leading-tight">
               <span className="block text-sm font-bold uppercase text-brand-purple">Jai Gajanan</span>
