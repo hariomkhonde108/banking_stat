@@ -33,7 +33,7 @@ export default function Header() {
         `}</style>
         <div className="animate-marquee text-sm font-medium tracking-wide">
           <span className="px-4">
-            Jai Gajanan Souharda Credit Co-operative Ltd. • High FD Interest Rates • Secure Savings • Flexible Daily & Recurring Deposits • Trusted Financial Security
+            Jai Gajanan Souharda Credit Co-operative Ltd. • 12% FD Interest Rates • Secure Savings • Flexible Daily & Recurring Deposits • Trusted Financial Security
           </span>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 min-w-0">
             <img
-              src="/logo_transperent.svg"
+              src="/logo_transperent.PNG"
               alt="Jai Gajanan Souharda Credit Co-operative Ltd."
               className="h-13 w-auto object-contain sm:h-14"
             />

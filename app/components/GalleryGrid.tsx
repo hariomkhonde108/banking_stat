@@ -11,7 +11,7 @@ type GalleryItem = {
 const galleryItems: GalleryItem[] = [
   { title: "Bhalki Branch", desc: "Our welcoming branch workspace in Bhalki ready to serve members.", image: "/bhalki_branch.jpeg" },
   { title: "Bidar Branch", desc: "Visit our Bidar team near Traffic Signal in Shiv Nagar.", image: "/bidar_branch.jpeg" },
-  { title: "Basavakalyan Branch", desc: "Our growing regional presence at Holkunde Complex.", image: "/banner.png" },
+  // { title: "Basavakalyan Branch", desc: "Our growing regional presence at Holkunde Complex.", image: "/banner.png" },
   { title: "Award & Recognition", desc: "Celebrating the cooperative's achievements and commitment to members.", image: "/award_gallery1.jpeg" },
   { title: "Community Financial Awareness Camp", desc: "Sharing practical guidance on secure savings and financial planning.", image: "/gallery2.jpeg" },
   { title: "Member Annual General Meeting", desc: "Celebrating cooperative milestones together with our valued members.", image: "/gallery3.jpeg" },
@@ -42,20 +42,15 @@ export default function GalleryGrid() {
     <>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {galleryItems.map((item) => (
-          <article key={item.title} className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
-            <div className="h-48 overflow-hidden bg-brand-darkPurple/10">
-              <img src={item.image} alt={item.title} className="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
-            </div>
-            <div className="flex items-center justify-between gap-4 p-6">
-              <h3 className="font-serif text-lg font-bold text-brand-purple">{item.title}</h3>
-              <button
-                type="button"
-                onClick={() => setSelectedItem(item)}
-                className="shrink-0 rounded-full bg-brand-purple px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-brand-darkPurple"
-              >
-                View
-              </button>
-            </div>
+          <article key={item.title} className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+            <button
+              type="button"
+              onClick={() => setSelectedItem(item)}
+              aria-label={`View ${item.title} full size`}
+              className="block w-full cursor-zoom-in bg-white focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-gold/50"
+            >
+              <img src={item.image} alt={item.title} className="block h-auto w-full object-contain transition-transform duration-300 hover:scale-[1.02]" />
+            </button>
           </article>
         ))}
       </div>
@@ -68,7 +63,7 @@ export default function GalleryGrid() {
           aria-label={selectedItem.title}
           onClick={() => setSelectedItem(null)}
         >
-          <div className="relative max-h-full w-full max-w-5xl overflow-auto rounded-3xl bg-white p-4 shadow-2xl sm:p-6" onClick={(event) => event.stopPropagation()}>
+          <div className="relative max-h-full w-full max-w-6xl overflow-auto rounded-2xl bg-white p-2 shadow-2xl sm:p-4" onClick={(event) => event.stopPropagation()}>
             <button
               type="button"
               onClick={() => setSelectedItem(null)}
@@ -77,9 +72,7 @@ export default function GalleryGrid() {
             >
               ×
             </button>
-            <img src={selectedItem.image} alt={`${selectedItem.title} full view`} className="max-h-[72vh] w-full rounded-2xl bg-gray-50 object-contain" />
-            <h2 className="mt-5 font-serif text-2xl font-bold text-brand-purple">{selectedItem.title}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-gray-600">{selectedItem.desc}</p>
+            <img src={selectedItem.image} alt={`${selectedItem.title} full view`} className="max-h-[90vh] w-full rounded-xl bg-gray-50 object-contain" />
           </div>
         </div>
       ) : null}

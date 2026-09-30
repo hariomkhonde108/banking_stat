@@ -58,7 +58,7 @@ export default function DepositsPage() {
         imageAlt="Deposit schemes at Jai Gajanan"
       />
 
-      <section className="bg-brand-lightGold/35 py-12">
+      {/* <section className="bg-brand-lightGold/35 py-12">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <span className="text-brand-purple text-xs font-bold tracking-[0.2em] uppercase">Deposit Highlights</span>
@@ -69,9 +69,9 @@ export default function DepositsPage() {
             <img src="/schemes_image.jpeg" alt="Jai Gajanan deposit and loan schemes" className="block h-auto max-h-[28rem] w-full rounded-2xl object-contain" />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-white py-16">
+      {/* <section className="bg-white py-16">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:px-8">
           <div>
             <span className="text-brand-purple text-xs font-bold tracking-[0.2em] uppercase">Scheme Pamphlet</span>
@@ -82,7 +82,7 @@ export default function DepositsPage() {
             <img src="/pamplet.jpeg" alt="Jai Gajanan scheme pamphlet" className="block h-auto max-h-[44rem] w-full rounded-2xl object-contain" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

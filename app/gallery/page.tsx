@@ -1,19 +1,19 @@
 import React from "react";
+import PageHero from "../components/PageHero";
 import GalleryGrid from "../components/GalleryGrid";
-import PageHero from "@/app/components/PageHero";
 
 export default function GalleryPage() {
   return (
     <div className="min-h-full flex flex-col font-sans bg-white text-gray-800 antialiased">
       <PageHero
-        badge="Moments & Events"
-        title="Our Gallery"
-        description="Glimpses of our branch activities, community outreach programs, and member celebrations."
-        imageAlt="Jai Gajanan gallery cover"
+        badge="Our Gallery"
+        title="Jai Gajanan Cooperative Bank"
+        description="A glimpse into our branches, team, and community moments."
+        imageAlt="Jai Gajanan Cooperative Bank"
       />
 
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gray-50 px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
           <GalleryGrid />
         </div>
       </section>

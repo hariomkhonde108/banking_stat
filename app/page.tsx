@@ -3,6 +3,7 @@ import Link from "next/link";
 import FloatingContact from "@/app/components/FloatingContact";
 import PageHero from "@/app/components/PageHero";
 import InquiryForm from "@/app/components/InquiryForm";
+import DepositCalculator from "@/app/components/DepositCalculator";
 import { siteContact, siteMission, siteVision } from "@/app/site-config";
 
 export default function HomePage() {
@@ -30,6 +31,43 @@ export default function HomePage() {
           </Link>
         </div>
       </PageHero>
+
+      <section className="bg-gray-50 px-4 py-16 sm:px-6 md:py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto mb-10 max-w-3xl text-center">
+            <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-brand-purple">Plan your next milestone</span>
+            <h2 className="font-serif text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">Calculate Your Investment Growth &amp; Returns</h2>
+            <p className="mt-4 text-sm leading-relaxed text-gray-600 sm:text-base">Explore our deposit schemes and see how your savings can grow with Jai Gajanan Souharda Credit Co-operative Ltd.</p>
+          </div>
+          <DepositCalculator />
+        </div>
+      </section>
+
+      <section className="bg-white px-4 py-16 sm:px-6 md:py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-2xl">
+            <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-brand-purple">Special deposit milestones</span>
+            <h2 className="font-serif text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">Make Your Savings Work Harder</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <article className="rounded-3xl border border-brand-gold/60 bg-brand-lightGold/35 p-7 shadow-sm">
+              <span className="text-4xl font-bold text-brand-purple">12%</span>
+              <h3 className="mt-3 font-serif text-xl font-bold text-gray-900">1-Year Fixed Deposit</h3>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">Earn our special 12% interest rate on a secure one-year fixed deposit.</p>
+            </article>
+            <article className="rounded-3xl border border-brand-gold/60 bg-brand-purple p-7 text-white shadow-lg">
+              <span className="text-4xl font-bold text-brand-gold">2×</span>
+              <h3 className="mt-3 font-serif text-xl font-bold text-white">Double Your Deposit in 6 Years</h3>
+              <p className="mt-3 text-sm leading-relaxed text-white/75">Choose a long-term milestone that is built around doubling your original deposit.</p>
+            </article>
+            <article className="rounded-3xl border border-gray-100 bg-gray-50 p-7 shadow-sm">
+              <span className="text-2xl font-bold text-brand-purple">₹500–₹5,000</span>
+              <h3 className="mt-3 font-serif text-xl font-bold text-gray-900">Monthly R.D. Plans</h3>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">Save consistently each month with recurring deposit plans tailored to your goals.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section className="py-20 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,6 +138,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mb-10">
+            <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Visit Us</span>
+            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Our Branches</h2>
+            <p className="text-gray-600 text-sm leading-relaxed">Find the Jai Gajanan team at a branch near you.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Bhalki",
+                address: "Near SBI Bank Sirse Complex, Bidar Road, Bhalki, Dist. Bidar",
+                image: "/bhalki_branch.jpeg",
+              },
+              {
+                name: "Bidar",
+                address: "Near Traffic Signal, Shiv Nagar, Bidar",
+                image: "/bidar_branch.jpeg",
+              },
+              {
+                name: "Basavakalyan",
+                address: "Tourist Lodge, Holkunde Complex, Basavakalyan",
+                image: "/banner.png",
+              },
+            ].map((branch) => (
+              <article key={branch.name} className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
+                <img src={branch.image} alt={`${branch.name} branch`} className="h-48 w-full object-cover" />
+                <div className="p-6">
+                  <h3 className="font-serif text-xl font-bold text-brand-purple mb-2">{branch.name} Branch</h3>
+                  <p className="text-sm leading-relaxed text-gray-600">{branch.address}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-brand-lightGold/35">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <article className="rounded-3xl bg-white p-8 shadow-sm border border-brand-gold/30">
@@ -113,7 +189,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="overflow-hidden rounded-3xl border border-gray-100 bg-brand-lightGold/30 p-3 shadow-lg">
             <img src="/schemes_image.jpeg" alt="Fixed deposits, recurring deposits, and gold loan services" className="block h-auto max-h-[30rem] w-full object-contain" />
@@ -130,7 +206,7 @@ export default function HomePage() {
             <Link href="/deposits" className="btn-brand-purple mt-7 rounded-full px-6 py-3 text-sm">View All Schemes</Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 md:py-24 bg-brand-purple text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,7 +256,7 @@ export default function HomePage() {
             <h3 className="font-serif text-lg font-bold text-brand-gold mb-4">Branch Location</h3>
             <div className="rounded-xl overflow-hidden border border-gray-700 h-32">
               <iframe
-                src="https://maps.google.com/maps?q=Bhalki,%20Bidar,%20Karnataka-585328&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3615.6518127743147!2d77.21833727518039!3d18.04974908295489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDAyJzU5LjEiTiA3N8KwMTMnMTUuMyJF!5e1!3m2!1sen!2sin!4v1790783487192!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

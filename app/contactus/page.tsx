@@ -99,7 +99,7 @@ export default function ContactUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-sm h-[280px] sm:h-[360px] lg:h-[400px]">
             <iframe
-              src="https://maps.google.com/maps?q=Bhalki,%20Bidar,%20Karnataka-585328&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3615.6518127743147!2d77.21833727518039!3d18.04974908295489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDAyJzU5LjEiTiA3N8KwMTMnMTUuMyJF!5e1!3m2!1sen!2sin!4v1790783487192!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -14,7 +14,26 @@ export default function ServicesPage() {
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mb-12">
+            <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-brand-purple">Special deposit milestones</span>
+            <h2 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">Featured Deposit Benefits</h2>
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+              <article className="rounded-3xl border border-brand-gold/60 bg-brand-lightGold/35 p-8 shadow-sm transition-all hover:border-brand-gold hover:shadow-md">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-purple text-2xl font-bold text-brand-gold">12%</div>
+                <h3 className="font-serif text-2xl font-bold text-brand-purple">12% Interest on 1-Year F.D.</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">Our special 12% interest rate on 1-year fixed deposits helps your one-time savings grow with a clear, secure maturity plan.</p>
+                <Link href="/contactus" className="mt-6 inline-flex text-xs font-semibold text-brand-purple transition-colors hover:text-brand-gold">Enquire About This Deposit →</Link>
+              </article>
+              <article className="rounded-3xl border border-brand-gold/60 bg-brand-purple p-8 text-white shadow-lg transition-all hover:bg-brand-darkPurple">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gold text-2xl font-bold text-brand-darkPurple">2×</div>
+                <h3 className="font-serif text-2xl font-bold text-white">Double Your Deposit in 6 Years</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/75">A distinct long-term deposit milestone designed to double the value of your original deposit over six years.</p>
+                <Link href="/contactus" className="mt-6 inline-flex text-xs font-semibold text-brand-gold transition-colors hover:text-white">Enquire About This Deposit →</Link>
+              </article>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               { title: "Savings Accounts", desc: "Tailored personal savings plans with competitive interest rates to help your money grow securely day by day." },
               { title: "Gold Loans", desc: "Instant gold loans with the lowest available interest rates, quick approval, and flexible repayment options." },
@@ -23,7 +42,7 @@ export default function ServicesPage() {
               { title: "Personal Financial Services", desc: "Practical financial guidance and support for members managing everyday money needs." },
               { title: "Member Advisory Support", desc: "Dedicated guidance and customer assistance to ensure a smooth, transparent, and personalized banking experience." },
             ].map((srv, idx) => (
-              <div key={idx} className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:border-brand-gold transition-all">
+              <div key={srv.title} className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all hover:border-brand-gold">
                 <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center font-bold text-lg mb-6">
                   0{idx + 1}
                 </div>
