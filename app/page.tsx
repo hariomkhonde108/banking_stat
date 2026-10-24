@@ -159,7 +159,7 @@ export default function HomePage() {
               },
               {
                 name: "Basavakalyan",
-                address: "Tourist Lodge, Holkunde Complex, Basavakalyan",
+                address: "Beside Shivaji Park -KHB colony main road basavakalyan",
               },
             ].map((branch) => (
               <article key={branch.name} className="rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-sm">

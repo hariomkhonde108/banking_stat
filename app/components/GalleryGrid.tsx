@@ -11,7 +11,7 @@ type GalleryItem = {
 const galleryItems: GalleryItem[] = [
   { title: "Bhalki Branch", desc: "Our welcoming branch workspace in Bhalki ready to serve members.", image: "/bhalki_branch.jpeg" },
   { title: "Bidar Branch", desc: "Visit our Bidar team near Traffic Signal in Shiv Nagar.", image: "/bidar_branch.jpeg" },
-  // { title: "Basavakalyan Branch", desc: "Our growing regional presence at Holkunde Complex.", image: "/banner.png" },
+  // { title: "Basavakalyan Branch", desc: "Our growing regional presence at Beside Shivaji Park -KHB.", image: "/banner.png" },
   { title: "Award & Recognition", desc: "Celebrating the cooperative's achievements and commitment to members.", image: "/award_gallery1.jpeg" },
   { title: "Community Financial Awareness Camp", desc: "Sharing practical guidance on secure savings and financial planning.", image: "/gallery2.jpeg" },
   { title: "Member Annual General Meeting", desc: "Celebrating cooperative milestones together with our valued members.", image: "/gallery3.jpeg" },

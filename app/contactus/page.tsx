@@ -77,7 +77,7 @@ export default function ContactUsPage() {
               },
               {
                 name: "Basavakalyan",
-                address: "Tourist Lodge, Holkunde Complex, Basavakalyan",
+                address: "Beside Shivaji Park -KHB colony main road basavakalyan",
               },
             ].map((branch) => (
               <article key={branch.name} className="rounded-3xl border border-gray-100 bg-gray-50 p-6 text-center shadow-sm">
