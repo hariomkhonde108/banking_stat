@@ -50,14 +50,20 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="overflow-hidden rounded-3xl border border-brand-gold/30 bg-brand-lightGold/20 p-4 shadow-lg">
             <img src="/president.jpeg" alt="President of Jai Gajanan Souharda Credit Co-operative Ltd." className="block h-auto max-h-[34rem] w-full object-contain" />
+            <div className="pt-4 text-center">
+              <h3 className="font-serif text-xl font-bold text-brand-purple">Mr. Vijaykumar Shinde</h3>
+              <p className="mt-1 text-sm font-medium text-gray-600">Founder &amp; Chairman</p>
+            </div>
           </div>
           <div>
-            <span className="text-brand-purple text-xs font-bold tracking-widest uppercase">Leadership & Recognition</span>
-            <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-gray-900">A cooperative built on trust</h2>
-            <p className="mt-4 text-gray-600 text-sm leading-relaxed">Our leadership keeps member service, transparency, and responsible financial growth at the center of every decision.</p>
-            <div className="mt-6 rounded-2xl border border-brand-gold/20 bg-white p-3 shadow-sm">
-              <img src="/award_gallery1.jpeg" alt="Jai Gajanan award and recognition" className="block h-auto max-h-[22rem] w-full rounded-xl object-contain" />
-            </div>
+            <span className="text-brand-purple text-xs font-bold tracking-widest uppercase">About Us</span>
+            <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-gray-900">Founded on Trust, Built for the Community</h2>
+            <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+              Jai Gajanan Souharda Credit Co-operative Ltd. was established in 2018 with a vision to promote financial growth, trust, and community development. Founded under the leadership of Mr. Vijaykumar Shinde, Founder and Chairman, the society is committed to providing reliable, transparent, and customer-focused financial services.
+            </p>
+            <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+              Since its establishment, the institution has focused on building strong relationships with its members and customers by encouraging savings, supporting financial needs, and promoting economic development. With a commitment to integrity, accountability, and service excellence, Jai Gajanan continues to work toward a financially secure and prosperous future for the community.
+            </p>
           </div>
         </div>
       </section>
