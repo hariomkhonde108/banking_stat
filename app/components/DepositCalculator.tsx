@@ -18,9 +18,9 @@ const scheme: Scheme = {
 };
 
 const tenureOptions = [12, 24, 36, 60];
-const minimumAmount = 5_000;
+const minimumAmount = 3_000;
 const maximumAmount = 1_000_000;
-const amountStep = 5_000;
+const amountStep = 1_000;
 
 const formatCurrency = (value: number) =>
   new Intl.NumberFormat("en-IN", {
@@ -30,10 +30,9 @@ const formatCurrency = (value: number) =>
   }).format(Math.round(value));
 
 const calculateMaturity = (amount: number, months: number, rate: number) => {
-  const years = months / 12;
-  const annualRate = rate / 100;
-  const maturity = amount * (1 + annualRate) ** years;
-  return { principal: amount, interest: maturity - amount, maturity };
+  const interest = amount * (rate / 100) * (months / 12);
+  const maturity = amount + interest;
+  return { principal: amount, interest, maturity };
 };
 
 export default function DepositCalculator() {
