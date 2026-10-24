@@ -70,25 +70,19 @@ export default function ContactUsPage() {
               {
                 name: "Bhalki",
                 address: "Near SBI Bank Sirse Complex, Bidar Road, Bhalki, Dist. Bidar",
-                image: "/bhalki_branch.jpeg",
               },
               {
                 name: "Bidar",
                 address: "Near Traffic Signal, Shiv Nagar, Bidar",
-                image: "/bidar_branch.jpeg",
               },
               {
                 name: "Basavakalyan",
                 address: "Tourist Lodge, Holkunde Complex, Basavakalyan",
-                image: "/banner.png",
               },
             ].map((branch) => (
-              <article key={branch.name} className="overflow-hidden rounded-3xl border border-gray-100 bg-gray-50 shadow-sm">
-                <img src={branch.image} alt={`${branch.name} branch`} className="h-48 w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-brand-purple mb-2">{branch.name} Branch</h3>
-                  <p className="text-sm leading-relaxed text-gray-600">{branch.address}</p>
-                </div>
+              <article key={branch.name} className="rounded-3xl border border-gray-100 bg-gray-50 p-6 text-center shadow-sm">
+                <h3 className="font-serif text-xl font-bold text-brand-purple">{branch.name} Branch</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{branch.address}</p>
               </article>
             ))}
           </div>

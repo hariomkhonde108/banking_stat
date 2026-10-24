@@ -8,7 +8,7 @@ export default function ServicesPage() {
       <PageHero
         badge="Comprehensive Offerings"
         title="Our Financial Services"
-        description="Specialized banking products designed to foster growth, financial stability, and prosperity for our members."
+        description="Specialized society products designed to foster growth, financial stability, and prosperity for our members."
         imageAlt="Financial services at Jai Gajanan"
       />
 
@@ -40,7 +40,7 @@ export default function ServicesPage() {
               { title: "Daily Deposit Collection", desc: "Reliable doorstep collection services designed for businesses and daily earners to cultivate consistent saving habits." },
               { title: "Secure Term Deposits", desc: "Fixed and recurring deposit schemes formulated for long-term financial stability and guaranteed peace of mind." },
               { title: "Personal Financial Services", desc: "Practical financial guidance and support for members managing everyday money needs." },
-              { title: "Member Advisory Support", desc: "Dedicated guidance and customer assistance to ensure a smooth, transparent, and personalized banking experience." },
+              { title: "Member Advisory Support", desc: "Dedicated guidance and customer assistance to ensure a smooth, transparent, and personalized society experience." },
             ].map((srv, idx) => (
               <div key={srv.title} className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all hover:border-brand-gold">
                 <div className="w-12 h-12 rounded-2xl bg-brand-purple text-brand-gold flex items-center justify-center font-bold text-lg mb-6">

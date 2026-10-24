@@ -46,9 +46,9 @@ export default function Header() {
               alt="Jai Gajanan Souharda Credit Co-operative Ltd."
               className="h-20 w-auto object-contain sm:h-[5.5rem]"
             />
-            <div className="hidden sm:block leading-tight">
-              <span className="block text-sm font-bold uppercase text-brand-purple">Jai Gajanan</span>
-              <span className="block text-[10px] text-gray-500 tracking-wider">Souharda Credit Co-Op Ltd.</span>
+            <div className="min-w-0 leading-tight">
+              <span className="block text-xs font-bold uppercase text-brand-purple sm:text-sm">Jai Gajanan</span>
+              <span className="block text-[9px] tracking-wider text-gray-500 sm:text-[10px]">Souharda Credit Co-Op Ltd.</span>
             </div>
           </Link>
 

@@ -18,7 +18,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Jai Gajanan Souharda Credit Co-operative Ltd.",
-  description: `Trusted cooperative banking, savings, deposits, gold loans, and financial services in Bhalki. Contact ${siteContact.email}.`,
+  description: `Trusted cooperative society, savings, deposits, gold loans, and financial services in Bhalki. Contact ${siteContact.email}.`,
+  icons: {
+    icon: "/logo_transperent.PNG",
+    apple: "/logo_transperent.PNG",
+  },
 };
 
 export const viewport: Viewport = {

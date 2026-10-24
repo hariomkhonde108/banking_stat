@@ -9,7 +9,7 @@ export default function CareerPage() {
       <PageHero
         badge="Join Our Team"
         title="Careers at Jai Gajanan"
-        description="Build a rewarding professional career in cooperative banking and community development."
+        description="Build a rewarding professional career in cooperative society and community development."
         imageAlt="Career opportunities at Jai Gajanan"
       />
 
@@ -18,12 +18,12 @@ export default function CareerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-2 block">Grow With Us</span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Build Trust Through Better Banking</h2>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Build Trust Through Better society</h2>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 At Jai Gajanan Souharda Credit Co-operative Ltd., we foster an environment of continuous learning, ethical responsibility, and teamwork. If you are passionate about finance and community service, we would love to connect with you.
               </p>
               <div className="mb-6 overflow-hidden rounded-3xl border border-brand-gold/30 bg-white shadow-sm">
-                <img src="/handshake_image_for_Careeer_page.webp" alt="Professional handshake representing cooperative partnership" className="h-56 w-full object-cover" />
+                <img src="/handshake_image_for_Careeer_page.jpg" alt="Professional handshake representing cooperative partnership" className="h-56 w-full object-cover" />
               </div>
               <div className="space-y-4">
                 <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">

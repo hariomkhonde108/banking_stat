@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 
-type SchemeType = "FD" | "RD" | "Piggy";
-
 type Scheme = {
   label: string;
   description: string;
@@ -12,25 +10,11 @@ type Scheme = {
   rateLabel: string;
 };
 
-const schemes: Record<SchemeType, Scheme> = {
-  FD: {
-    label: "Fixed Deposit",
-    description: "Grow a one-time deposit with our special fixed deposit rate.",
-    rate: 12,
-    rateLabel: "12% p.a.",
-  },
-  RD: {
-    label: "Recurring Deposit",
-    description: "Build your savings steadily with a regular monthly deposit.",
-    rate: 10,
-    rateLabel: "10% p.a.",
-  },
-  Piggy: {
-    label: "Piggy Schemes",
-    description: "Save consistently toward a meaningful goal with a flexible plan.",
-    rate: 8,
-    rateLabel: "8% p.a.",
-  },
+const scheme: Scheme = {
+  label: "Fixed Deposit",
+  description: "Grow a one-time deposit with our special fixed deposit rate.",
+  rate: 12,
+  rateLabel: "12% p.a.",
 };
 
 const tenureOptions = [12, 24, 36, 60];
@@ -45,60 +29,25 @@ const formatCurrency = (value: number) =>
     maximumFractionDigits: 0,
   }).format(Math.round(value));
 
-const calculateMaturity = (scheme: SchemeType, amount: number, months: number, rate: number) => {
+const calculateMaturity = (amount: number, months: number, rate: number) => {
   const years = months / 12;
   const annualRate = rate / 100;
-
-  if (scheme === "FD") {
-    const maturity = amount * (1 + annualRate) ** years;
-    return { principal: amount, interest: maturity - amount, maturity };
-  }
-
-  const principal = amount * months;
-  const monthlyRate = annualRate / 12;
-  const maturity = monthlyRate === 0
-    ? principal
-    : amount * (((1 + monthlyRate) ** months - 1) / monthlyRate) * (1 + monthlyRate);
-
-  return { principal, interest: maturity - principal, maturity };
+  const maturity = amount * (1 + annualRate) ** years;
+  return { principal: amount, interest: maturity - amount, maturity };
 };
 
 export default function DepositCalculator() {
-  const [schemeType, setSchemeType] = useState<SchemeType>("FD");
   const [amount, setAmount] = useState(minimumAmount);
   const [tenure, setTenure] = useState(12);
-  const scheme = schemes[schemeType];
-  const summary = calculateMaturity(schemeType, amount, tenure, scheme.rate);
-  const amountLabel = schemeType === "FD" ? "Deposit amount" : "Monthly deposit";
-  const principalLabel = schemeType === "FD" ? "Deposited amount" : "Total deposited";
+  const summary = calculateMaturity(amount, tenure, scheme.rate);
 
   return (
     <div className="overflow-hidden rounded-3xl border border-brand-gold/30 bg-white shadow-[0_22px_60px_rgba(74,21,75,0.12)]">
       <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
         <div className="bg-brand-purple p-6 text-white sm:p-8 lg:p-10">
           <div className="mb-8">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">Choose a scheme</span>
-            <div className="mt-4 grid grid-cols-3 rounded-2xl bg-brand-darkPurple/70 p-1" role="tablist" aria-label="Deposit scheme type">
-              {(Object.keys(schemes) as SchemeType[]).map((type) => (
-                <button
-                  key={type}
-                  type="button"
-                  role="tab"
-                  aria-selected={schemeType === type}
-                  onClick={() => setSchemeType(type)}
-                  className={`rounded-xl px-2 py-3 text-sm font-semibold transition-colors ${
-                    schemeType === type ? "bg-brand-gold text-brand-darkPurple shadow-sm" : "text-white/75 hover:text-white"
-                  }`}
-                >
-                  {type === "Piggy" ? "Piggy" : type}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-8">
             <div className="mb-3 flex items-end justify-between gap-4">
-              <label htmlFor="deposit-amount" className="text-sm font-medium text-white/80">{amountLabel}</label>
+              <label htmlFor="deposit-amount" className="text-sm font-medium text-white/80">Deposit amount</label>
               <span className="text-2xl font-bold text-brand-gold">{formatCurrency(amount)}</span>
             </div>
             <input
@@ -164,7 +113,7 @@ export default function DepositCalculator() {
 
             <div className="mt-8 space-y-4">
               <div className="flex items-center justify-between border-b border-brand-gold/25 pb-4 text-sm">
-                <span className="text-gray-600">{principalLabel}</span>
+                <span className="text-gray-600">Deposited amount</span>
                 <span className="font-semibold text-gray-900">{formatCurrency(summary.principal)}</span>
               </div>
               <div className="flex items-center justify-between border-b border-brand-gold/25 pb-4 text-sm">

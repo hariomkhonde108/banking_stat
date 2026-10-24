@@ -7,8 +7,8 @@ const depositSchemes = [
     id: "savings",
     num: "01",
     title: "Savings Accounts",
-    desc: "Secure personal savings plans designed for everyday banking, dependable access, and steady financial growth.",
-    bullets: ["Personal savings planning", "Convenient account access", "Safe cooperative banking"],
+    desc: "Secure personal savings plans designed for everyday society, dependable access, and steady financial growth.",
+    bullets: ["Personal savings planning", "Convenient account access", "Safe cooperative society"],
   },
   {
     id: "fixed",

@@ -11,10 +11,10 @@ export default function HomePage() {
     <div className="min-h-full flex flex-col font-sans bg-white text-gray-800 antialiased">
       <PageHero
         badge="JGSCCOOPL Bhalki"
-        title="Empowering Prosperity Through Trusted Co-operative Banking"
+        title="Empowering Prosperity Through Trusted Co-operative society"
         description="Delivering safe savings, competitive returns, and accessible financial assistance designed to uplift every member of our community."
         imageSrc="/banner.png"
-        imageAlt="Jai Gajanan cooperative banking"
+        imageAlt="Jai Gajanan cooperative society"
         className="py-14 md:py-16 lg:py-20"
       >
         <div className="flex flex-wrap justify-center gap-4">
@@ -113,7 +113,7 @@ export default function HomePage() {
       <section className="py-20 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
           <span className="text-brand-purple text-xs font-bold tracking-[0.2em] uppercase mb-3 block">What We Offer</span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.6rem] font-bold text-gray-900 leading-tight">Specialized Banking Solutions</h2>
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.6rem] font-bold text-gray-900 leading-tight">Specialized society Solutions</h2>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -122,8 +122,8 @@ export default function HomePage() {
             { title: "Gold Loans", desc: "Instant gold loans with competitive interest rates, quick approval, and flexible repayment options." },
             { title: "Daily Deposit Collection", desc: "Doorstep collection services designed for businesses and daily wage earners to cultivate consistent saving habits." },
             { title: "Fixed & Recurring Deposits", desc: "High-yield term deposit plans structured to guarantee long-term financial security and peace of mind." },
-            { title: "Personal Financial Services", desc: "Reliable, personalized advisory and support for everyday banking, deposits, and member needs." },
-            { title: "Secure Member Support", desc: "Clear guidance and dependable service to ensure seamless day-to-day cooperative banking experiences." },
+            { title: "Personal Financial Services", desc: "Reliable, personalized advisory and support for everyday society, deposits, and member needs." },
+            { title: "Secure Member Support", desc: "Clear guidance and dependable service to ensure seamless day-to-day cooperative society experiences." },
           ].map((item, idx) => (
             <div
               key={item.title}
@@ -152,25 +152,19 @@ export default function HomePage() {
               {
                 name: "Bhalki",
                 address: "Near SBI Bank Sirse Complex, Bidar Road, Bhalki, Dist. Bidar",
-                image: "/bhalki_branch.jpeg",
               },
               {
                 name: "Bidar",
                 address: "Near Traffic Signal, Shiv Nagar, Bidar",
-                image: "/bidar_branch.jpeg",
               },
               {
                 name: "Basavakalyan",
                 address: "Tourist Lodge, Holkunde Complex, Basavakalyan",
-                image: "/banner.png",
               },
             ].map((branch) => (
-              <article key={branch.name} className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
-                <img src={branch.image} alt={`${branch.name} branch`} className="h-48 w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-brand-purple mb-2">{branch.name} Branch</h3>
-                  <p className="text-sm leading-relaxed text-gray-600">{branch.address}</p>
-                </div>
+              <article key={branch.name} className="rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-sm">
+                <h3 className="font-serif text-xl font-bold text-brand-purple">{branch.name} Branch</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{branch.address}</p>
               </article>
             ))}
           </div>

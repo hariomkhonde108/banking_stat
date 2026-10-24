@@ -33,13 +33,13 @@ export default function AboutPage() {
                 </p>
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                Bridging Traditional Values and Modern Banking
+                Bridging Traditional Values and Modern society
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Jai Gajanan Souharda Credit Co-operative Ltd. is dedicated to bridging the gap between conventional institutional banking and regional rural communities. Our foundation is built on financial empowerment as the primary driver for social and economic transformation.
+                Jai Gajanan Souharda Credit Co-operative Ltd. is dedicated to bridging the gap between conventional institutional society and regional rural communities. Our foundation is built on financial empowerment as the primary driver for social and economic transformation.
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We believe banking is far beyond simple transactions—it is about nurturing lifelong relationships, supporting member dreams, and building economic resilience for generations to come.
+                We believe society is far beyond simple transactions—it is about nurturing lifelong relationships, supporting member dreams, and building economic resilience for generations to come.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { step: "01", title: "Our Vision", desc: siteVision },
-            { step: "02", title: "Our Foundation", desc: "Founded to eliminate banking barriers in regional sectors, prioritizing financial literacy and community-first empowerment." },
+            { step: "02", title: "Our Foundation", desc: "Founded to eliminate society barriers in regional sectors, prioritizing financial literacy and community-first empowerment." },
             { step: "03", title: "Our Mission", desc: siteMission },
           ].map((item, idx) => (
             <div key={idx} className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 relative text-left">
@@ -93,7 +93,7 @@ export default function AboutPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { title: "Financial Inclusion", desc: "Expanding modern banking access to every corner of society, ensuring geography is never a barrier." },
+            { title: "Financial Inclusion", desc: "Expanding modern society access to every corner of society, ensuring geography is never a barrier." },
             { title: "Absolute Transparency", desc: "Honesty is our cornerstone, maintaining absolute clarity in every member policy and transaction." },
             { title: "Unwavering Trust", desc: "Safeguarding your financial future with robust institutional stability and personalized security." },
             { title: "Community Growth", desc: "Investing in collective prosperity through accessible financial services and responsible member support." },
